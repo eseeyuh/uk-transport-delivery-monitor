@@ -1,0 +1,70 @@
+{
+  "manifest_version": 1,
+  "user_metadata_file": "data/manual/source_metadata.csv",
+  "user_metadata_file_found": true,
+  "provenance_rules": "release_year, snapshot_date, retrieval_date, source_page_url and download_url are copied from the user metadata file only; null means not supplied. They are never inferred from file names, file contents or filesystem timestamps.",
+  "verified_links_file": "data/reference/source_links.csv",
+  "verified_links_rule": "verified_links are copied from the verified links file only when its recorded SHA256 equals the raw file's SHA256 (the file served at download_url was byte-identical on verified_on). verified_on is the date of that check, not the date the raw file was retrieved; an unknown retrieval_date stays null.",
+  "sources": [
+    {
+      "file_name": "nista_2024_25.csv",
+      "path": "data/raw/nista_2024_25.csv",
+      "sha256": "cac14ed4e6a90a81486bdc24295ea40996e7fd6fcd3834e3ffad8a2685f8c8b3",
+      "byte_size": 629559,
+      "encoding": "utf-8",
+      "utf8_bom": true,
+      "delimiter": ",",
+      "header_columns": 21,
+      "data_rows": 213,
+      "release_year": "2024-25",
+      "snapshot_date": "2025-03-31",
+      "retrieval_date": null,
+      "source_page_url": null,
+      "download_url": null,
+      "user_metadata_missing": [
+        "retrieval_date",
+        "source_page_url",
+        "download_url"
+      ],
+      "verified_links": {
+        "release_year": "2024-25",
+        "source_page_url": "https://www.gov.uk/government/publications/nista-annual-report-2024-2025",
+        "download_url": "https://assets.publishing.service.gov.uk/media/6895fbb63080e72710b2e2ef/nista_annual_report_data_2425.csv",
+        "report_url": "https://www.gov.uk/government/publications/nista-annual-report-2024-2025/nista-annual-report-2024-25",
+        "sha256": "cac14ed4e6a90a81486bdc24295ea40996e7fd6fcd3834e3ffad8a2685f8c8b3",
+        "verified_on": "2026-10-22",
+        "verification": "Claude: file served at download_url (linked from source_page_url) has the same SHA256 as data/raw/nista_2024_25.csv. Not the original retrieval date, which remains unsupplied."
+      }
+    },
+    {
+      "file_name": "nista_2025_26.csv",
+      "path": "data/raw/nista_2025_26.csv",
+      "sha256": "434e3667308157be0539f4ce85f208e7b69af373a2638df457f40c1197d8524e",
+      "byte_size": 521941,
+      "encoding": "utf-8",
+      "utf8_bom": true,
+      "delimiter": ",",
+      "header_columns": 21,
+      "data_rows": 189,
+      "release_year": "2025-26",
+      "snapshot_date": "2026-03-31",
+      "retrieval_date": null,
+      "source_page_url": null,
+      "download_url": null,
+      "user_metadata_missing": [
+        "retrieval_date",
+        "source_page_url",
+        "download_url"
+      ],
+      "verified_links": {
+        "release_year": "2025-26",
+        "source_page_url": "https://www.gov.uk/government/publications/nista-major-projects-annual-report-2025-26",
+        "download_url": "https://assets.publishing.service.gov.uk/media/6a4fb28da6586e258d371bfd/NISTA_Major_Projects_Annual_Report_2025-2026_Data.csv",
+        "report_url": "https://www.gov.uk/government/publications/nista-major-projects-annual-report-2025-26/nista-major-projects-annual-report-2025-26",
+        "sha256": "434e3667308157be0539f4ce85f208e7b69af373a2638df457f40c1197d8524e",
+        "verified_on": "2026-10-22",
+        "verification": "Claude: file served at download_url (linked from source_page_url) has the same SHA256 as data/raw/nista_2025_26.csv. Not the original retrieval date, which remains unsupplied."
+      }
+    }
+  ]
+}

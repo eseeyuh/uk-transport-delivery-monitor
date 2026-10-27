@@ -1,0 +1,53 @@
+check_id,stage,description,actual,expected,result
+S01,01_scope,observation_id is unique in observations,0,0,pass
+S02,01_scope,scope and source-link joins keep one row per observation,402,402,pass
+S03,01_scope,every scope review row joins to one observation,35,35,pass
+S04,01_scope,sample rows equal scope review rows with include = true,29,29,pass
+S05,01_scope,sample contains no excluded or unreviewed observation,0,0,pass
+S06,01_scope,confirmed pairs joined to sample observations equal confirmed crosswalk rows,13,13,pass
+S07,01_scope,confirmed pairs repeat no old or new observation (no join multiplication),0,0,pass
+S08,01_scope,every sample observation has exactly one match status row,29,29,pass
+S09,01_scope,sample observations per side = confirmed pairs + observations without a confirmed pair,29,29,pass
+S10,01_scope,unmatched statuses and labels equal outputs/unmatched_observations.csv from src/match.py,0,0,pass
+S11,01_scope,"no unmatched observation is labelled completed, cancelled, closed, exited or new",0,0,pass
+S12,01_scope,every source file has one verified link whose SHA256 equals the manifest,2,2,pass
+S13,01_scope,"manifest release_year, where supplied, equals the release_year of every observation in that file",0,0,pass
+S14,01_scope,"every release has at most one snapshot date, and supplied dates are valid",0,0,pass
+Q01,02_quality,every sample observation has one status row per mapped field of its release,0,0,pass
+Q02,02_quality,every field status has an availability class,0,0,pass
+Q03,02_quality,availability counts sum to the sample denominator for each release and field,0,0,pass
+Q04,02_quality,every parsed start and end date is a valid calendar date,0,0,pass
+Q05,02_quality,"every parsed DCA rating is GREEN, AMBER or RED",0,0,pass
+Q06,02_quality,no observation has ratings in both the external and SRO DCA fields,0,0,pass
+Q07,02_quality,"every parsed amount has at most 6 decimal places (exact in DECIMAL(38,6))",0,0,pass
+Q08,02_quality,every parsed amount and published percentage casts to a number,0,0,pass
+C01,03_comparison,annual variance keeps one row per observation,402,402,pass
+C02,03_comparison,variance only where baseline and forecast are parsed with the same price-basis label,0,0,pass
+C03,03_comparison,variance percentage is never infinite or NaN,0,0,pass
+C04,03_comparison,variance percentage is null whenever baseline is not above zero,0,0,pass
+C05,03_comparison,every calculated variance with a zero baseline is flagged,0,0,pass
+C06,03_comparison,schedule and DCA comparisons keep one row per confirmed pair,26,26,pass
+C07,03_comparison,end-date movement only for schedule-comparable pairs,0,0,pass
+C08,03_comparison,every schedule-comparable pair has two valid end dates and a movement,0,0,pass
+C09,03_comparison,DCA transitions only for DCA-comparable pairs with same-field ratings on the scale,0,0,pass
+C10,03_comparison,"a missing, withheld or blank rating never yields a transition",0,0,pass
+C11,03_comparison,every DCA-comparable pair has a transition,0,0,pass
+C12,03_comparison,no observation without a confirmed pair enters a schedule or DCA comparison,0,0,pass
+C13,03_comparison,no pair is flagged monetary-comparable (cross-release money disabled),0,0,pass
+C14,03_comparison,every sample observation with a parsed DCA rating has one origin review row with the same field and rating,0,0,pass
+C15,03_comparison,every origin evidence quote occurs verbatim in the commentary; only an unattributed rating may lack one,0,0,pass
+C16,03_comparison,every DCA-comparable pair has verified origin of the same class in both releases,0,0,pass
+C17,03_comparison,every pair has either a calculated comparison or exactly one exclusion reason,0,0,pass
+C18,03_comparison,every pair excluded by the reviewer on scope cites scope or re-sequencing in its rationale,0,0,pass
+E01,04_reconciliation,export row counts equal their source tables (joins preserve rows),0,0,pass
+E02,04_reconciliation,no excluded or unreviewed observation appears in any export,0,0,pass
+E03,04_reconciliation,observation-level exports have unique observation_id,0,0,pass
+E04,04_reconciliation,project_key is present and unique within each release in the observation export,0,0,pass
+E05,04_reconciliation,"a project_key observed in both releases is the canonical ID of a confirmed pair, and every pair key is on both observations",0,0,pass
+R01,04_reconciliation,no published variance is negative (unsigned-magnitude convention holds),0,0,pass
+R02,04_reconciliation,reconciliation keeps one row per sample observation,29,29,pass
+R03,04_reconciliation,published values equal the prepared source values (not overwritten),0,0,pass
+R04,04_reconciliation,calculated values equal the annual variance table (not adjusted to agree),0,0,pass
+R05,04_reconciliation,every sample observation has one recognised reconciliation status,0,0,pass
+R06,04_reconciliation,coverage pair counts equal confirmed pair counts,13,13,pass
+R07,04_reconciliation,"coverage: eligible + excluded = confirmed pairs, outcomes sum to eligible, reasons sum to excluded",0,0,pass

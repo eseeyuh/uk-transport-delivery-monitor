@@ -1,0 +1,26 @@
+observation_id,release_year,rating_field,rating,commentary_attribution,evidence_quote,reviewer,note
+nista_2024_25:0083,2024-25,sro,GREEN,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at GREEN,Claude — AI-assisted verification,
+nista_2024_25:0084,2024-25,sro,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0085,2024-25,external,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0086,2024-25,sro,GREEN,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at GREEN,Claude — AI-assisted verification,
+nista_2024_25:0087,2024-25,external,RED,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at RED,Claude — AI-assisted verification,
+nista_2024_25:0088,2024-25,external,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0092,2024-25,external,RED,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 changed from AMBER to RED,Claude — AI-assisted verification,
+nista_2024_25:0093,2024-25,sro,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0095,2024-25,sro,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0096,2024-25,external,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0097,2024-25,sro,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,"NISTA is named only for the next assurance review, not for this rating."
+nista_2024_25:0098,2024-25,sro,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0099,2024-25,external,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2024_25:0100,2024-25,sro,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 24/25-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2025_26:0055,2025-26,external,RED,NISTA/SRO,The NISTA / SRO Delivery Confidence Assessment (DCA) rating remains at RED at 25/26 Q4,Claude — AI-assisted verification,
+nista_2025_26:0059,2025-26,external,RED,NISTA,the National Infrastructure & Service Transformation Authority's Delivery Confidence Assessment rating at 25/26-Q4 is at RED,Claude — AI-assisted verification,
+nista_2025_26:0060,2025-26,sro,RED,none,,Claude — AI-assisted verification,Commentary does not mention the rating or any assessor.
+nista_2025_26:0061,2025-26,external,AMBER,NISTA,The NISTA DCA rating for 25/26 Q4 is Amber,Claude — AI-assisted verification,"Commentary also reports an SRO rating of Green, which is not the published CSV value."
+nista_2025_26:0062,2025-26,external,AMBER,NISTA,the NISTA Delivery Confidence Assessment rating at 25/26 Q4 has improved from Red to Amber,Claude — AI-assisted verification,
+nista_2025_26:0063,2025-26,sro,GREEN,SRO,The SRO Delivery Confidence Assessment (DCA) rating remained Green in Q4 25/26,Claude — AI-assisted verification,
+nista_2025_26:0066,2025-26,sro,AMBER,NISTA/SRO,the NISTA/SRO Delivery Confidence Assessment (DCA) rating at 25/26 Q4 remained at Amber,Claude — AI-assisted verification,
+nista_2025_26:0067,2025-26,sro,AMBER,none,The assessment remains ‘Amber’,Claude — AI-assisted verification,Names no assessor.
+nista_2025_26:0068,2025-26,sro,GREEN,NISTA/SRO,the NISTA/SRO Delivery Confidence Assessment (DCA) rating at 25/26 Q4 remained at green,Claude — AI-assisted verification,
+nista_2025_26:0069,2025-26,sro,AMBER,NISTA,the NISTA Delivery Confidence Assessment rating at 25/26-Q4 remained at AMBER,Claude — AI-assisted verification,
+nista_2025_26:0070,2025-26,sro,AMBER,IPA,the Infrastructure Project Authority's Delivery Confidence Assessment rating at 25/26-Q4 remained at AMBER,Claude — AI-assisted verification,2025-26 commentary still cites the IPA and compares with 23/24-Q4.

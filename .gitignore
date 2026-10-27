@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Generated databases
+*.duckdb
+*.duckdb.wal
+
+# Power BI files distributed through GitHub Releases
+*.pbix
+*.pbit
+**/.pbi/
+
+# Logs
+*.log
