@@ -22,10 +22,5 @@ Thumbs.db
 *.duckdb
 *.duckdb.wal
 
-# Power BI files distributed through GitHub Releases
-*.pbix
-*.pbit
-**/.pbi/
-
 # Logs
 *.log
